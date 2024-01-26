@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: black;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+p {
+    text-align: left;
+}
+
+p strong {
+    color: red;
+    font-weight: bold;
+}
+
+.accent-text {
+    color: red; /* Or the specific shade of red used in your image */
+}
+
+.sub-heading {
+    font-size: 30px; /* Adjust the font size as needed */
+    color: black;
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: normal; /* If the sub-heading is not meant to be bold */
+}
+
+.text-content {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.text-content p {
+    font-size: 18px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust the line height as needed */
+    margin-bottom: 1em;
+}
+
+/* If you want to style the strong tags differently, you can add more styles */
+strong {
+    font-weight: bold;
+}

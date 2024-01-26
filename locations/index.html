@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feed the Frontlines Georgia</title>
+<link rel="stylesheet" href="../styles.css">
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        function countUp(element, target, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        element.textContent = formatNumber(Math.floor(progress * target));
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        } else {
+            element.textContent = formatNumber(target); // Ensure it ends on the exact target number
+        }
+    };
+    window.requestAnimationFrame(step);
+        }
+
+    function formatNumber(number) {
+    return number.toLocaleString(); // Adds commas
+    }
+
+    
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'), 10);
+            countUp(counter, target, 2000); // Count up over 2 seconds
+        });
+    });
+    </script>
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Logo would be an image or an SVG here -->
+            <a href="../index.html"><img src="../img/logo.png" alt="Feed the Frontlines Georgia"></a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="../locations/index.html">Locations</a></li>
+            <li class="nav-item"><a href="../partners/index.html">Partners</a></li>
+            <li class="nav-item"><a href="../press/index.html">Press</a></li>
+            <li class="nav-item"><a href="../fundraisers/index.html">Fundraisers</a></li>
+            <li class="nav-item"><a href="../our-mission/index.html">Our Mission</a></li>
+            
+        </ul>
+        <div class="donate-button">
+            <a href="#donate">Donate</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    
+    <section class="hero"><div container>
+        <h1>These are places we've delivered!</h1>
+        
+        <img src="../img/location.png" alt="Feed the Frontlines Georgia"></div>
+  </section>
+</main>
+
+
+<footer>
+    <div class="footer-content">
+        <img src="../img/logo.png" alt="Feed the Frontlines Georgia" class="footer-logo">
+        <div class="footer-text">
+            <p>501(c)3 nonprofit</p>
+            <p>All your donations are tax deductible!</p>
+            <p>Registered Charity Number: 46-5394918</p>
+        </div>
+        <div class="footer-contact">
+            <p>Reach out: feedthefrontlinesga@gmail.com</p>
+            <p>Support our efforts: GoFundMe</p>
+            <p>Venmo: @FTFga</p>
+        </div>
+        <div class="social-icons">
+            <!-- Icons would be added here, for example using an icon library like Font Awesome -->
+            <a href="https://facebook.com" class="social-link"><img src="../img/icon/icon_fb.png" alt="Facebook"></a>
+            <a href="https://twitter.com" class="social-link"><img src="../img/icon/icon_twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" class="social-link"><img src="../img/icon/icon_instagram.svg" alt="Instagram"></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

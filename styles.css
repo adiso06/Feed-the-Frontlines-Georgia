@@ -1,0 +1,271 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Styles for the header */
+}
+
+.location img{
+    height: 50%;
+    width: 50%;
+}
+
+.hero {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero img{
+    height: 100%;
+    width: 100%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.stat {
+    flex-basis: 33%; /* Adjust the width of each stat box */
+    text-align: center;
+    padding: 20px;
+}
+.stat:first-child, .stat:last-child {
+    background-color: #F5F5F5; 
+}
+
+/* Middle child will have the theme red background */
+.stat:nth-child(2) {
+    background-color: #ED706B	; /* Replace with actual theme red color code */
+    color: white;
+}
+
+.stat h2 {
+    color: #e63946; /* Example color */
+    font-size: 2em;
+}
+
+.stat p {
+    color: #333;
+}
+
+.call-to-action {
+    /* Styles for call-to-action buttons */
+}
+
+.social-proof {
+    /* Styles for social proof section */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* styles.css */
+
+/* Header and navigation styles */
+.navbar {
+    background-color: #ffffff; /* White background for the navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px; /* Adjust based on actual logo size */
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333; /* Dark text color for nav items */
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for nav items */
+    transition: background-color 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #e6e6e6; /* Light grey background on hover */
+}
+
+
+.donate-button {
+    position: fixed; /* Fix the button to the viewport */
+    bottom: 40px; /* Position it 20px from the bottom */
+    right: 40px; /* Position it 20px from the right */
+}
+
+.donate-button a {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 40px; /* 20px from the bottom */
+    right: 40px; /* 20px from the right */
+    text-decoration: none;
+    background-color: #d9534f; /* Red color for the donate button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for donate button */
+    font-weight: 700;
+    transition: background-color 0.3s;
+    z-index: 10000; /* Ensure it's above other elements */
+}
+
+/* Optional: Change the background color on hover */
+.donate-button a:hover {
+    background-color: #c9302c; /* Darker shade of red for hover effect */
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Adjust padding as needed */
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-logo {
+    height: 100px; /* Adjust based on actual logo size */
+}
+
+.footer-text p, .footer-contact p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-link img {
+    height: 40px; /* Adjust based on actual icon size */
+    margin: 0 10px;
+}
+
+
+//* styles.css */
+/* ... your existing styles ... */
+
+.partners-section {
+    padding: 20px;
+    background-color: #f8f8f8; /* Adjust the color to match the design */
+    text-align: center;
+}
+
+.partners-section h2 {
+    color: #333; /* Dark gray - adjust as necessary */
+    margin-bottom: 20px;
+}
+
+.partners-container {
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.columns {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    flex-wrap: wrap; /* Wrap columns onto new lines as needed */
+    gap: 20px; /* Spacing between columns */
+    vertical-align: top;
+    align-items: flex-start;
+}
+
+.column {
+    margin: auto; /* Center the columns in the flex container */
+    max-width: 500px; /* Maximum width of each column */
+}
+
+.column h3 {
+    color: #d9534f; /* Theme red - adjust as necessary */
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px; /* Spacing between list items */
+    color: #333; /* Dark gray - adjust as necessary */
+    font-weight: normal; /* Adjust as necessary */
+}
+
+.column ul li:first-child {
+    font-weight: bold; /* MetroATL and other city names in bold */
+}
+.call-to-action .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Space between grid items */
+    justify-content: center; /* Horizontally center the entire grid */
+    align-items: center; /* Vertically center the grid items */
+    padding: 20px; /* Padding around the grid */
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: 0 auto; /* Center the grid container horizontally */
+}
+
+.call-to-action .grid-item {
+    position: relative;
+    place-self: center; /* Center grid item within its cell */
+    width: 100%; /* Grid item width */
+    max-width: 75%; /* Maximum width of each grid item */
+}
+
+.call-to-action .grid-item img {
+    width: 100%; /* Make image fill the container */
+    display: block; /* Remove any default spacing below image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.call-to-action .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0); /* Transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    font-weight: bold;
+}
+
+.call-to-action .grid-item:hover .overlay-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay on hover */
+    opacity: 1;
+}
+

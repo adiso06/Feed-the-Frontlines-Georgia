@@ -1,0 +1,31 @@
+.container {
+    text-align: center; /* Center the columns in the container */
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top; /* Align the tops of the inline-block elements */
+    width: calc(50% - 10px); /* Subtract the gap divided by 2 from 50% to account for the gap */
+    margin: auto; /* Center the columns in the container */
+    max-width: 500px; /* Maximum width of each column */
+}
+
+.column h3 {
+    color: #d9534f; /* Theme red - adjust as necessary */
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px; /* Spacing between list items */
+    color: #333; /* Dark gray - adjust as necessary */
+    font-weight: normal; /* Adjust as necessary */
+}
+
+.column ul li:first-child {
+    font-weight: bold; /* MetroATL and other city names in bold */
+}
