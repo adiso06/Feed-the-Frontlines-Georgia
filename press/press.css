@@ -1,0 +1,22 @@
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    grid-gap: 10px; /* Adjust the gap between grid items */
+    max-width: 660px;
+    margin:auto;
+}
+
+#grid > div {
+    font-size: 30px;
+    padding:1px;
+    color: #ffffff;
+    background: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+#grid img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
