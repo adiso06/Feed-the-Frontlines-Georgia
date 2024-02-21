@@ -1,4 +1,4 @@
-# README: Feed the Frontlines Georgia
+# Feed the Frontlines Georgia
 
 Welcome to the GitHub repository for Feed the Frontlines Georgia, a nonprofit organization dedicated to supporting healthcare workers and local restaurants during the COVID-19 pandemic. Founded in April 2020 by a group of University of Georgia graduates with aspirations in medicine, our mission rapidly expanded from a local initiative to a statewide effort.
 
